@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+   </head>
+   <body>
+      <script type="text/javascript" src="../public/add-props.min.js"></script>
+      <script type="text/javascript">
+         var myObject = {};
+         
+			// Just create properties structure
+			addProps(myObject, 'click.url');
+
+			// Add value to the property
+			addProps(myObject, 'events.tracker.pixel.url', 12346789);
+
+			// Create multiple properties and fill them with the same value
+			addProps(myObject, ['stat.user_id', 'html.footer.block_id'], 'id123456789');
+
+			// Create multiple properties with own values
+			addProps(myObject, ['video.duration', 'audio.sound.muted'], [120.459, true]);
+
+			addProps(myObject, 'invalid.pr op.123 -- 456', 'lol', true);
+
+         console.clear();
+         console.log(JSON.stringify(myObject, true, 3));
+         
+      </script>
+   </body>
+</html>
