@@ -3,13 +3,13 @@
  */
 
 function addProps(obj, props, values){
-	if(typeof obj !== 'object'){
-		props = obj;
-		if(typeof values !== 'undefined'){
-			values = props;
-		}
-		obj = {};
-	}
+   if(typeof obj !== 'object'){
+      props = obj;
+      if(typeof values !== 'undefined'){
+         values = props;
+      }
+      obj = {};
+   }
 
    var check = function(p, level, list, val){
       if(!Object.prototype.hasOwnProperty.call(level, p)){
