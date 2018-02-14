@@ -66,5 +66,5 @@ console.log(JSON.stringify(myObject, true, 3));
 
 Also you can create new object with specified props. Just skip the first argument like so:
 ```javascript
-var new_object = addProps('new.click.url');
+var new_object = addProps('new.object.says', 'yey!');
 ```
