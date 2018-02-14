@@ -6,7 +6,6 @@ Easiest way to add props and values to the object
 ```javascript
 var myObject = {};
 
-
 // Just create properties structure
 addProps(myObject, 'click.url');
 
@@ -64,3 +63,8 @@ addProps(myObject, ['video.duration', 'audio.sound.muted'], [120.459, true]);
 console.log(JSON.stringify(myObject, true, 3));
 ```
 
+
+Also you can create new object with specified props. Just skip the first argument like so:
+```javascript
+var new_object = addProps('new.click.url');
+```

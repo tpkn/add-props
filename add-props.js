@@ -1,8 +1,16 @@
 /*!
- * Add Props (v1.1.0.20180211), http://tpkn.me/
+ * Add Props (v1.1.2.20180211), http://tpkn.me/
  */
 
 function addProps(obj, props, values){
+	if(typeof obj !== 'object'){
+		props = obj;
+		if(typeof values !== 'undefined'){
+			values = props;
+		}
+		obj = {};
+	}
+
    var check = function(p, level, list, val){
       if(!Object.prototype.hasOwnProperty.call(level, p)){
          level[p] = {};
@@ -28,7 +36,8 @@ function addProps(obj, props, values){
    }
 
    if(!Array.isArray(props) && typeof props !== 'string'){
-      return console.log('Property is not a string or array!');
+      console.log('Property is not a string or array!');
+      return {};
    }
 
    if(Array.isArray(props)){
@@ -38,6 +47,8 @@ function addProps(obj, props, values){
    }else{
       loop(obj, String(props).split('.'), values);
    }
+
+   return obj;
 }
 
 
