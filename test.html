@@ -4,8 +4,10 @@
       <meta charset="utf-8"/>
    </head>
    <body>
-      <script type="text/javascript" src="../public/add-props.min.js"></script>
+      <script type="text/javascript" src="add-props.min.js"></script>
       <script type="text/javascript">
+         console.clear();
+
          var myObject = {};
          
 			// Just create properties structure
@@ -22,9 +24,13 @@
 
 			addProps(myObject, 'invalid.pr op.123 -- 456', 'lol', true);
 
-         console.clear();
          console.log(JSON.stringify(myObject, true, 3));
+
+
+         // New object with defined props
+         var new_object = addProps('new.click.url');
          
+         console.log(JSON.stringify(new_object, true, 3));
       </script>
    </body>
 </html>
