@@ -28,7 +28,7 @@ function addProps(obj, props, values){
    }
 
    if(Object.prototype.toString.call(obj) != '[object Object]'){
-	   values = props;
+      values = props;
       props = obj;
       obj = {};
    }
