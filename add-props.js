@@ -1,5 +1,5 @@
 /*!
- * Add Props (v1.1.2.20180211), http://tpkn.me/
+ * Add Props, http://tpkn.me/
  */
 
 function addProps(obj, props, values){

@@ -2,8 +2,18 @@
 Easiest way to add props and values to the object
 
 
+## Installation
+```bash
+npm install add-props
+```
+
+
+
 ## Usage
 ```javascript
+const addProps = require('add-props');
+
+
 var myObject = {};
 
 // Just create properties structure
