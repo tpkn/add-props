@@ -1,4 +1,4 @@
-# Add Props [npm Package](https://img.shields.io/npm/v/add-props.svg)](https://www.npmjs.org/package/add-props)
+# Add Props [![npm Package](https://img.shields.io/npm/v/add-props.svg)](https://www.npmjs.org/package/add-props)
 Easiest way to add props and values to the object
 
 
